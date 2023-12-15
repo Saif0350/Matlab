@@ -12,3 +12,24 @@ for i = 100:999
     end
 end
 
+
+
+% To find prime numbers
+
+n = 50;  % Change this value to your desired maximum number
+prime_numbers = [];
+
+for num = 2:n
+    is_prime = true;
+    for div = 2:sqrt(num)
+        if rem(num, div) == 0
+            is_prime = false;
+            break;
+        end
+    end
+    if is_prime
+        prime_numbers = [prime_numbers, num];
+    end
+end
+disp(prime_numbers);
+

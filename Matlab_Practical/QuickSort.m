@@ -11,3 +11,9 @@ function sortedArray = quickSort(arr)
     
     sortedArray = [quickSort(left) middle quickSort(right)];
 end
+
+
+% For Printing:
+% array = [9, 5, 7, 3, 1, 8, 6, 2, 4];
+% sortedArray = quickSort(array);
+% disp(sortedArray);
